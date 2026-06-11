@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Harsh Jain</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Harsh Jain - founder of Globora, and builder of the Agent Control Protocol (ACP)." />
+  <link rel="canonical" href="https://harshjainhq.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Harsh Jain" />
+  <meta property="og:description" content="Founder of Globora. Building the Agent Control Protocol (ACP)." />
+  <meta property="og:url" content="https://harshjainhq.com/" />
+  <meta property="og:site_name" content="Harsh Jain" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Harsh Jain" />
+  <meta name="twitter:description" content="Founder of Globora. Building the Agent Control Protocol (ACP)." />
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification" content="eddJ0V86XNbWP7dkdzY2JK3bX9DRdIsdtKvD8sug8Eo" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "url": "https://harshjainhq.com/",
+      "name": "Harsh Jain",
+      "description": "Personal homepage for Harsh Jain, founder of Globora and builder of Agent Control Protocol.",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Harsh Jain",
+        "url": "https://harshjainhq.com/",
+        "email": "mailto:hi@harshjainhq.com",
+        "jobTitle": "Founder",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Globora",
+          "url": "https://www.globora.ai/"
+        },
+        "sameAs": [
+          "https://x.com/harshjainhq",
+          "https://github.com/harshjainhq",
+          "https://www.linkedin.com/in/harshjainhq"
+        ],
+        "knowsAbout": [
+          "Globora",
+          "Agent Control Protocol",
+          "trade decision support",
+          "autonomous agents"
+        ]
+      }
+    }
+  </script>
+
+  <!-- Theme color matches initial dark bg to avoid flash on mobile browsers -->
+  <meta name="theme-color" content="#1f1e1d" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f0eee6" media="(prefers-color-scheme: light)" />
+
+  <!-- Newsreader (serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,16..72,400;0,16..72,500;0,16..72,600;0,16..72,700;1,16..72,400&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Pre-paint theme application to avoid flash -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("hj-theme");
+        if (t !== "light" && t !== "dark") t = "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="site-title"><a href="/">Harsh Jain</a></h1>
+      <button
+        type="button"
+        class="theme-toggle"
+        data-theme-toggle
+        aria-label="Toggle black and white theme"
+        aria-pressed="false"
+      ></button>
+    </div>
+  </header>
+
+  <main class="site" data-screen-label="01 Home">
+
+    <section class="home-intro" aria-label="About">
+      <p>
+        I'm Harsh Jain, founder of
+        <a href="https://www.globora.ai/">Globora</a>, a trade decision support
+        platform for Indian exporters.
+      </p>
+      <p>
+        Globora was selected under MSME Idea Hackathon 4.0 and received grant
+        support from the Ministry of MSME, Government of India.
+      </p>
+      <p>
+        I'm also building
+        <a href="https://agentcontrolprotocol.io/">Agent Control Protocol (ACP)</a>,
+        an open protocol for authorizing, reviewing, and auditing autonomous
+        agent actions.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="essays-heading">
+      <h2 id="essays-heading" class="section-title">Essays</h2>
+      <p class="essays-empty">Coming soon.</p>
+    </section>
+
+    <section class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-title">Contact</h2>
+      <p class="contact-primary">
+        <a href="mailto:hi@harshjainhq.com">hi@harshjainhq.com</a>
+      </p>
+      <ul class="contact-list">
+        <li><a class="external" href="https://x.com/harshjainhq" rel="me">X</a></li>
+        <li><a class="external" href="https://github.com/harshjainhq" rel="me">GitHub</a></li>
+        <li><a class="external" href="https://www.linkedin.com/in/harshjainhq" rel="me">LinkedIn</a></li>
+      </ul>
+    </section>
+
+    <div class="utility">
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+
+  </main>
+
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "97d80888c4e043f28adde5354a461929"}'
+  ></script>
+
+  <script src="script.js"></script>
+</body>
+</html>

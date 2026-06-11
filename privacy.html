@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Privacy Policy - Harsh Jain</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="Privacy policy for harshjainhq.com." />
+  <link rel="canonical" href="https://harshjainhq.com/privacy.html" />
+  <meta name="robots" content="noindex" />
+
+  <meta name="theme-color" content="#1f1e1d" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f0eee6" media="(prefers-color-scheme: light)" />
+
+  <!-- Newsreader (serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,16..72,400;0,16..72,500;0,16..72,600;0,16..72,700;1,16..72,400&display=swap" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("hj-theme");
+        if (t !== "light" && t !== "dark") t = "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <p class="site-title"><a href="/">Harsh Jain</a></p>
+      <button
+        type="button"
+        class="theme-toggle"
+        data-theme-toggle
+        aria-label="Toggle black and white theme"
+        aria-pressed="false"
+      ></button>
+    </div>
+  </header>
+
+  <main class="site" data-screen-label="03 Privacy">
+
+    <article>
+      <h2 class="section-title" style="font-size: 38px; margin-bottom: 24px;">Privacy Policy</h2>
+      <div class="privacy-body">
+        <p>
+          This site uses privacy-friendly analytics to understand basic aggregate
+          traffic. No cookies, ads, tracking pixels, or individual visitor
+          profiles are used.
+        </p>
+        <p>
+          If you email me, I use your email address only to reply.
+        </p>
+      </div>
+    </article>
+
+  </main>
+
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "97d80888c4e043f28adde5354a461929"}'
+  ></script>
+  <script src="script.js"></script>
+</body>
+</html>

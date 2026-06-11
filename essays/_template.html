@@ -1,0 +1,183 @@
+<!doctype html>
+<!--
+  ESSAY TEMPLATE — copy this file to essays/your-slug.html and edit.
+
+  Checklist when adding a new essay:
+    1. Copy this file:  essays/_template.html  ->  essays/your-slug.html
+    2. Replace every {{PLACEHOLDER}} below (title, subtitle, description, dates, slug).
+    3. Write the body inside <div class="essay-body"> (the contents/TOC builds
+       itself from the <h2> headings — no manual list needed).
+    4. Add a link on the homepage inside <ul class="essay-list"> in /index.html.
+    5. Add a <url> entry for the essay in /sitemap.xml.
+
+  Note: this file starts with "_" so it is easy to spot and is not a real essay.
+  Do not link to _template.html from the homepage or sitemap.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ESSAY TITLE}} - Harsh Jain</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta name="description" content="{{ONE-LINE DESCRIPTION}}" />
+  <link rel="canonical" href="https://harshjainhq.com/essays/{{your-slug}}.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ESSAY TITLE}}" />
+  <meta property="og:description" content="{{ONE-LINE DESCRIPTION}}" />
+  <meta property="og:url" content="https://harshjainhq.com/essays/{{your-slug}}.html" />
+  <meta property="og:site_name" content="Harsh Jain" />
+  <meta property="article:author" content="Harsh Jain" />
+  <meta property="article:published_time" content="{{YYYY-MM-DD}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ESSAY TITLE}}" />
+  <meta name="twitter:description" content="{{ONE-LINE DESCRIPTION}}" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ESSAY TITLE}}",
+      "description": "{{ONE-LINE DESCRIPTION}}",
+      "datePublished": "{{YYYY-MM-DD}}",
+      "dateModified": "{{YYYY-MM-DD}}",
+      "mainEntityOfPage": "https://harshjainhq.com/essays/{{your-slug}}.html",
+      "author": {
+        "@type": "Person",
+        "name": "Harsh Jain",
+        "url": "https://harshjainhq.com/",
+        "sameAs": [
+          "https://x.com/harshjainhq",
+          "https://github.com/harshjainhq",
+          "https://www.linkedin.com/in/harshjainhq"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Harsh Jain",
+        "url": "https://harshjainhq.com/"
+      }
+    }
+  </script>
+
+  <meta name="theme-color" content="#1f1e1d" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f0eee6" media="(prefers-color-scheme: light)" />
+
+  <!-- Newsreader (serif) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,16..72,400;0,16..72,500;0,16..72,600;0,16..72,700;1,16..72,400&display=swap" />
+
+  <link rel="stylesheet" href="../styles.css" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("hj-theme");
+        if (t !== "light" && t !== "dark") t = "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+<body id="top" class="essay-page">
+
+  <header class="header">
+    <div class="header-inner">
+      <p class="site-title"><a href="../">Harsh Jain</a></p>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="menu-btn"
+          data-contents-toggle
+          aria-controls="contents"
+          aria-expanded="false"
+          aria-label="Toggle table of contents"
+        >
+          <span class="menu-icon" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <button
+          type="button"
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Toggle black and white theme"
+          aria-pressed="false"
+        ></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contents drawer (auto-populated from the h2 headings below) -->
+  <aside class="contents" id="contents" data-contents aria-label="Table of contents">
+    <h3>Contents</h3>
+    <div data-contents-list></div>
+  </aside>
+  <div class="contents-scrim" data-contents-scrim aria-hidden="true"></div>
+
+  <main class="site" data-screen-label="Essay - {{ESSAY TITLE}}">
+
+    <article class="essay">
+      <header class="essay-header">
+        <h1 class="essay-title">{{ESSAY TITLE}}</h1>
+        <p class="essay-subtitle">{{Subtitle — one italic line.}}</p>
+        <p class="essay-date"><time datetime="{{YYYY-MM}}">{{Month YYYY}}</time></p>
+      </header>
+
+      <div class="essay-body">
+        <!--
+          Write the essay here. Available building blocks (see styles.css):
+            <p>…</p>                         paragraph
+            <h2 id="section-id">…</h2>       section heading (becomes a TOC entry)
+            <h3>…</h3>                        sub-heading
+            <ul class="bullet-list"><li>…</li></ul>   styled bullets
+            <blockquote>…</blockquote>       pull quote
+            <hr class="dinkus" />            typographic section break
+          Footnotes: add <sup class="footnote-ref" id="fnref1"><a href="#fn1">1</a></sup>
+          inline, then a matching <li id="fn1">…</li> in the footnotes list below.
+          On desktop, footnote text also appears as a hover tooltip automatically.
+        -->
+        <p>
+          {{Opening paragraph.}}
+        </p>
+
+        <h2 id="first-section">{{First section heading}}</h2>
+        <p>
+          {{Body paragraph.}}
+        </p>
+
+        <!-- Remove this footnotes section if the essay has no footnotes. -->
+        <section class="essay-footnotes" aria-label="Footnotes">
+          <ol class="footnotes-list">
+            <li id="fn1">
+              {{Footnote text.}}<a href="#fnref1" class="footnote-backref">&#8617;</a>
+            </li>
+          </ol>
+        </section>
+      </div>
+    </article>
+
+    <footer class="essay-footer">
+      <p><a href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Back to top</a></p>
+      <p><a href="../privacy.html">Privacy Policy</a></p>
+    </footer>
+
+  </main>
+
+  <!-- Cloudflare Web Analytics -->
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "97d80888c4e043f28adde5354a461929"}'
+  ></script>
+
+  <script src="../script.js"></script>
+</body>
+</html>
